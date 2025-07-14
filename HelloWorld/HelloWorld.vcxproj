@@ -190,13 +190,32 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Agent8.cpp" />
+    <ClCompile Include="Coins.cpp" />
+    <ClCompile Include="DestroyObjects.cpp" />
+    <ClCompile Include="Fan.cpp" />
+    <ClCompile Include="PlayerControls.cpp" />
+    <ClCompile Include="Lasers.cpp" />
     <ClCompile Include="MainGame.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Tools.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Play.h" />
+    <ClInclude Include="Agent8.h" />
+    <ClInclude Include="Agent8State.h" />
+    <ClInclude Include="Coins.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="DestroyObjects.h" />
+    <ClInclude Include="Fan.h" />
+    <ClInclude Include="GameObjectType.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="Lasers.h" />
+    <ClInclude Include="MainGame.h" />
+    <ClInclude Include="PlayerControls.h" />
+    <ClInclude Include="Tools.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
